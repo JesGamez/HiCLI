@@ -55,6 +55,6 @@ Para establecer las relaciones debe tener en cuenta lo siguiente:
 
 **2.** Saber donde hay una historia clinica 
 
-**3.** Ahorro de tiempo
+**3.** Reportes
 
-**4.** Reportes
+**4.** Control de acceso a usuarios
