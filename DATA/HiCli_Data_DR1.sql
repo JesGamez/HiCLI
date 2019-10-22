@@ -1,4 +1,6 @@
 
+USE hicli;
+
 -- INSERCION DE REGISTROS EN LA TABLA UBIGEO
 
 INSERT INTO UBIGEO (CODUBI, DEPUBI, PROVUBI, DISTUBI) VALUES  ('010101','AMAZONAS','CHACHAPOYAS','CHACHAPOYAS');
@@ -1838,6 +1840,8 @@ INSERT INTO UBIGEO (CODUBI, DEPUBI, PROVUBI, DISTUBI) VALUES  ('250401','UCAYALI
 
 -- INSERCION DE REGISTROS EN LA TABLA PERSONA
 
+SELECT * FROM PERSONA;
+
 INSERT INTO PERSONA (NOMPER,APEPER,CELPER,DNIPER,DIRPER,SEXPER,FECNACPER,TIPPER,CODUBI,ESTPER) VALUES  
 ('Luis Diego','Rojas Ayllon','923820545','72720518','Urb San Agustin Mz S Lt 22','M','1999/07/24','TRA','150512','A'),
 ('Alvaro Felipe','Iturrizaga Vargaz','929078909','78978909','Pasaje Primavera','M','1999/04/21','TRA','150512','A'),
@@ -1848,22 +1852,100 @@ INSERT INTO PERSONA (NOMPER,APEPER,CELPER,DNIPER,DIRPER,SEXPER,FECNACPER,TIPPER,
 ('Nalda Maria','Palomino Rojas','989900908','77787878','Los Duraznos maduros Mz S Lt 34','F','1999/05/30','PAC','150512','A'),
 ('Juan Marco','Menacho Levano','911123221','76543452','Los Tornillos Oxidados en Su casa','M','1990/12/25','PAC','150512','A'),
 ('Mario Edwin','Quispe Alarcon','989899890','76512321','Las Cosas azules','M','1987/03/13','PAC','150512','A'),
-('Jordy Beto','Mendez Palomino','999098973','78999009','Las Personas Felices','M','1985/07/19','PAC','150512','A');
+('Jordy Beto','Mendez Palomino','999098973','78999009','Las Personas Felices','M','1985/07/19','PAC','150512','A'),
+('Martin Alexis','Quispe Huaman','989899885','76512345','Las Cosas rojas','M','1987/03/13','PAC','150512','A'),
+('silvana Alexia','Sanchez Rivera','989899423','76512339','Las Cosas verdes','F','1987/03/19','PAC','150512','A');
 
 
 -- INSERCION DE REGISTROS A LA TABLA PACIENTE
 
-INSERT INTO PACIENTE (IDPER,ESTCIVPAC,FECREGPAC,ESTPAC) VALUES
+INSERT INTO 
+PACIENTE (IDPER,ESTCIVPAC,FECREGPAC,ESTPAC) 
+VALUES
 ('4','S','2019/10/19','A'),
 ('5','S','2019/10/19','A'),
 ('6','S','2019/10/19','A'),
 ('7','C','2019/10/19','A'),
 ('8','S','2019/10/19','A'),
 ('9','C','2019/10/19','A'),
-('0','C','2019/10/19','A');
+('10','C','2019/10/19','A'),
+('11','C','2019/10/19','A'),
+('12','C','2019/10/19','A'),
+('3','C','2019/10/19','A');
 
 
 -- INSERCION DE REGISTRO A LA TABLA ESTABLECIMIENTO
 
-INSERT INTO ESTABLECIMIENTO (NOMEST,DIREST,TELEST,CODUBI,ESTEST) VALUES
-('Centro de Salud Quilmana','Quilmaná 15712','4877898','150512','A');
+INSERT INTO 
+ESTABLECIMIENTO (NOMEST,DIREST,TELEST,CODUBI,ESTEST) 
+VALUES
+('Centro de Salud Quilmana','Quilmaná 15712','4877898','150512','A'),
+('Centro de Salud San Vicente','San Viocente 15712','4877898','150512','A'),
+('Centro de Salud Imperial','Imperial 15712','4877898','150512','A'),
+('Centro de Salud Cerro Alegre','Cerro Alegre 15712','4877898','150512','A'),
+('Centro de Salud Cerro Azul','Cerro Azul 15712','4877898','150512','A'),
+('Centro de Salud Lunahuana','Lunahuana 15712','4877898','150512','A'),
+('Centro de Salud Asia','Asia 15712','4877898','150512','A'),
+('Centro de Salud Mala','Mala 15712','4877898','150512','A');
+
+INSERT INTO 
+ESPECIALIDAD (DESESP,ESTESP) 
+VALUES
+('ADMINISTRADOR','A'),
+('SECRETARIA','A'),
+('SERVICIO DOCUMENTARIO','A'),
+('FINANZAS','A'),
+('RECURSOS HUMANOS','A'),
+('LOGISTICA','A'),
+('ODONTOLOGIA','A'),
+('CIRUGIA','A'),
+('SANIDAD','A'),
+('INFORMATICA','A');
+
+INSERT INTO 
+USUARIO (NAMUSE,PASUSE,TIPUSE,ESTUSE) 
+VALUES
+('LUIS','LUIS123','A','A'),
+('JOSE','123456','U','A'),
+('MARIO','123456','U','A'),
+('JUAN','123456','U','A'),
+('DIEGO','123456','U','A'),
+('JESUS','123456','U','A'),
+('BENJAMIN','123456','U','A'),
+('JEFERSON','123456','U','A'),
+('ADMIN','123456','A','A'),
+('USER','123456','U','A');
+
+INSERT INTO 
+HISTORIA_CLINICA (PESO,ALTURA,IDPAC,IDTRA,FECHISCLI) 
+VALUES
+
+('47','1.60','150513',2,'2000/12/14'),
+('30','1.50','150514',3,'2000/12/14'),
+('35','1.65','150515',4,'2000/12/14'),
+('61','1.70','150516',5,'2000/12/14'),
+('80','1.71','150517',6,'2000/12/14'),
+('70','1.70','150518',7,'2000/12/14'),
+('50','1.60','150519',2,'2000/12/14'),
+('35','1.50','150520',3,'2000/12/14'),
+('86','1.40','150521',4,'2000/12/14');
+
+INSERT INTO
+TRABAJADOR (IDPER,IDESP,IDEST,CARTRA,FECREGTRA,EMAILTRA,IDUSE,ESTTRA)
+VALUES
+(1,1,1,'J','2000/12/14','silvia@gmail.com',1,'A'),
+(2,2,2,'E','2000/12/15','juan@gmail.com',2,'A'),
+(3,3,3,'E','2000/12/13','luis@gmail.com',3,'A'),
+(4,2,4,'E','2000/12/12','juana@gmail.com',4,'A'),
+(5,3,5,'E','2000/12/11','Luis@gmail.com',5,'A'),
+(6,3,6,'E','2000/12/11','jeferson@gmail.com',5,'A'),
+(7,3,7,'E','2000/12/11','zecarlos@gmail.com',5,'A'),
+(8,3,8,'E','2000/12/11','jesus@gmail.com',5,'A'),
+(9,3,1,'E','2000/12/11','taquire@gmail.com',5,'A'),
+(10,3,1,'E','2000/12/11','diego@gmail.com',5,'A'),
+(11,4,1,'E','2000/12/10','yalle@gmail.com',6,'A');
+SELECT * FROM UBIGEO;
+
+
+
+

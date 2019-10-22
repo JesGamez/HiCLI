@@ -1,9 +1,15 @@
 -- Created by Vertabelo (http://vertabelo.com)
--- Last modification date: 2019-10-19 04:05:13.438
 
+-- Last modification date: 2019-10-19 04:05:13.438
+CREATE DATABASE IF NOT EXISTS hicli
+DEFAULT CHARACTER SET utf8;
+
+use hicli;
 -- tables
 -- Table: ESPECIALIDAD
-CREATE TABLE ESPECIALIDAD (
+
+
+CREATE  OR REPLACE TABLE ESPECIALIDAD (
     IDESP int NOT NULL AUTO_INCREMENT COMMENT 'Código identificador de la Especialidad.',
     DESESP varchar(50) NULL COMMENT 'Descripción de la Especialidad',
     ESTESP char(1) NULL COMMENT 'Estado de Activo o Inactivo.',
@@ -11,7 +17,7 @@ CREATE TABLE ESPECIALIDAD (
 ) COMMENT 'Esta tabla contiene todas las Especialidades de los trabajadores.';
 
 -- Table: ESTABLECIMIENTO
-CREATE TABLE ESTABLECIMIENTO (
+CREATE  OR REPLACE TABLE ESTABLECIMIENTO (
     IDEST int NOT NULL AUTO_INCREMENT COMMENT 'Codigo identificador del Establecimiento.',
     NOMEST varchar(80) NULL COMMENT 'Nombre del Establecimiento.',
     DIREST varchar(100) NULL COMMENT 'Direccion del establecimiento.',
@@ -22,7 +28,7 @@ CREATE TABLE ESTABLECIMIENTO (
 ) COMMENT 'Contiene todos los establecimientos de la SBS.';
 
 -- Table: HISTORIA_CLINICA
-CREATE TABLE HISTORIA_CLINICA (
+CREATE  OR REPLACE TABLE HISTORIA_CLINICA (
     CODHISCLI int NOT NULL AUTO_INCREMENT COMMENT 'Identificador de cada Historia Clinica.',
     PESO numeric(6,2) NULL COMMENT 'Peso de cada paciente.',
     ALTURA numeric(6,2) NULL COMMENT 'Altura de cada paciente.',
@@ -33,7 +39,7 @@ CREATE TABLE HISTORIA_CLINICA (
 ) COMMENT 'Contiene las Historias Clinicas de todos los pacientes.';
 
 -- Table: PACIENTE
-CREATE TABLE PACIENTE (
+CREATE  OR REPLACE TABLE PACIENTE (
     IDPAC int NOT NULL AUTO_INCREMENT COMMENT 'Codigo identificador del Paciente.',
     IDPER int NOT NULL COMMENT 'ID de la Persona que es un paciente.',
     ESTCIVPAC char(1) NULL COMMENT 'Estado civil del paciente.',
@@ -43,7 +49,7 @@ CREATE TABLE PACIENTE (
 ) COMMENT 'Contiene datos de los pacientes registrados.';
 
 -- Table: PERSONA
-CREATE TABLE PERSONA (
+CREATE  OR REPLACE TABLE PERSONA (
     IDPER int NOT NULL AUTO_INCREMENT COMMENT 'Codigo de la persona',
     NOMPER varchar(80) NULL COMMENT 'Nombre de la persona',
     APEPER varchar(80) NULL COMMENT 'Apellido de la Persona',
@@ -59,7 +65,7 @@ CREATE TABLE PERSONA (
 ) COMMENT 'Contiene todos los datos personales de las personas.';
 
 -- Table: TRABAJADOR
-CREATE TABLE TRABAJADOR (
+CREATE  OR REPLACE TABLE TRABAJADOR (
     IDTRA int NOT NULL AUTO_INCREMENT COMMENT 'Identificador del Trabajador',
     IDPER int NOT NULL COMMENT 'Codigo de la persona',
     IDESP int NOT NULL COMMENT 'Id de la Especialidad a la que pertenece.',
@@ -73,7 +79,7 @@ CREATE TABLE TRABAJADOR (
 ) COMMENT 'Contiene los datos principales de cada trabajador.';
 
 -- Table: UBIGEO
-CREATE TABLE UBIGEO (
+CREATE  OR REPLACE TABLE UBIGEO (
     CODUBI char(6) NOT NULL COMMENT 'Codigo Ubigeo',
     DEPUBI varchar(100) NULL COMMENT 'Derpartamento de Ubigeo',
     PROVUBI varchar(100) NULL COMMENT 'Provincia de Ubigeo',
@@ -82,7 +88,7 @@ CREATE TABLE UBIGEO (
 ) COMMENT 'Contiene todos los Ubigeos del PERÚ.';
 
 -- Table: USUARIO
-CREATE TABLE USUARIO (
+CREATE  OR REPLACE TABLE USUARIO (
     IDUSE int NOT NULL AUTO_INCREMENT COMMENT 'Codigo identificador por usuario.',
     NAMUSE varchar(50) NULL COMMENT 'Nombre de Usuario.',
     PASUSE varchar(50) NULL COMMENT 'Contraseña de Usuario.',
