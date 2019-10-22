@@ -1,14 +1,19 @@
 ## Base de Datos HiCli
 
 Contiene la Base de Datos de Historias Clinicas, realizado en el motor MySQL.
+Se desarrollo con la finalidad de mostrar que la implementacion de un sistema 
+estandarizado integra la informacion de las historias clinicas
+permitiendo la optimizacion del proceso de atencion y mejorando la calidad de 
+atencion a los pacientes del centro de salud.
+Como resultado se obtiene un Sistema de un informacion que permite la eficiente 
+integracion de la informacion clinica de las historias clinicas evitando la perdida 
+de la informacion.
 
-### Estructura y descripción
-
-Esta base de datos estará conformada por las siguientes tablas:
+Esta base de datos estarï¿½ conformada por las siguientes tablas:
 
 - **PERSONA:** Contiene todos los datos personales de las personas.
 
-- **UBIGEO:** Contiene todos los Ubigeos del PERÚ.
+- **UBIGEO:** Contiene todos los Ubigeos del PERï¿½.
 
 - **ESTABLECIMIENTO:** Contiene todos los establecimientos de la SBS.
 
@@ -18,7 +23,7 @@ Esta base de datos estará conformada por las siguientes tablas:
 
 - **HISTORIA_CLINICA:** Contiene las Historias Clinicas de todos los pacientes.
 
-- **USUARIO:** Inicio de Sesión.
+- **USUARIO:** Inicio de Sesiï¿½n.
 
 - **ESPECIALIDAD:** Esta tabla contiene todas las Especialidades de los trabajadores.
 
@@ -43,3 +48,13 @@ Para establecer las relaciones debe tener en cuenta lo siguiente:
 **8.** Un Trabajador puede tener un usuario.
 
 **9.** Un trabajador puede tener una especialidad.
+
+### Requerimientos Funcionales
+
+**1.** Que no haya redundancia de datos.
+
+**2.** Saber donde hay una historia clinica 
+
+**3.** Ahorro de tiempo
+
+**4.** Reportes
