@@ -1837,10 +1837,7 @@ INSERT INTO UBIGEO (CODUBI, DEPUBI, PROVUBI, DISTUBI) VALUES  ('250302','UCAYALI
 INSERT INTO UBIGEO (CODUBI, DEPUBI, PROVUBI, DISTUBI) VALUES  ('250303','UCAYALI','PADRE ABAD','CURIMANA');
 INSERT INTO UBIGEO (CODUBI, DEPUBI, PROVUBI, DISTUBI) VALUES  ('250401','UCAYALI','PURUS','PURUS');
 
-
 -- INSERCION DE REGISTROS EN LA TABLA PERSONA
-
-SELECT * FROM PERSONA;
 
 INSERT INTO PERSONA (NOMPER,APEPER,CELPER,DNIPER,DIRPER,SEXPER,FECNACPER,TIPPER,CODUBI,ESTPER) VALUES  
 ('Luis Diego','Rojas Ayllon','923820545','72720518','Urb San Agustin Mz S Lt 22','M','1999/07/24','TRA','150512','A'),
@@ -1854,24 +1851,68 @@ INSERT INTO PERSONA (NOMPER,APEPER,CELPER,DNIPER,DIRPER,SEXPER,FECNACPER,TIPPER,
 ('Mario Edwin','Quispe Alarcon','989899890','76512321','Las Cosas azules','M','1987/03/13','PAC','150512','A'),
 ('Jordy Beto','Mendez Palomino','999098973','78999009','Las Personas Felices','M','1985/07/19','PAC','150512','A'),
 ('Martin Alexis','Quispe Huaman','989899885','76512345','Las Cosas rojas','M','1987/03/13','PAC','150512','A'),
-('silvana Alexia','Sanchez Rivera','989899423','76512339','Las Cosas verdes','F','1987/03/19','PAC','150512','A');
+('silvana Alexia','Sanchez Rivera','989899423','76512339','Las Cosas verdes','F','1987/03/19','PAC','150512','A'),
+('Jose Alberto','Condori Jara','924545656','72720578','Urb San Agustin Mz C Lt 10','M','1999/04/21','PAC','150512','A'),
+('Bryan Luis','Calle Carrollo','929000909','78978129','Pasaje los duraznos','M','1999/01/01','PAC','150512','A'),
+('Jose Miguel','Gimenez Pachas','987790987','78765111','Pasaje los carbones Mz A Lt 1','M','1981/11/17','PAC','150512','A'),
+('Maria Lila','Mercedes Chupivilca','989876765','76767767','Urbanizacion los Reyes','F','1990/05/17','PAC','150512','A'),
+('Maria Isabel','Luyo Vargaz,','989878900','72435651','Las Malvinas por el paradero','F','1999/04/19','PAC','150512','A'),
+('Angeles Mary','Alarcon Huaman','978253121','72317898','Los Reyes','F','1999/01/27','PAC','150512','A'),
+('Pamela Nalda','Aramburu Saravia','989121123','77787809','Por el parque de quilmana','F','1998/05/30','PAC','150512','A'),
+('Sebastian Felix','Ochoa Villombrocio','911123361','76123452','Los Tornillos Oxidados en Su casa','M','1991/11/25','PAC','150512','A'),
+('Manuel Huber','Uribe Cardenas','989121890','76524321','Las Cosas azules','M','1989/09/12','PAC','150512','A'),
+('Juan Danilo','Canales Manzo','999098122','78999119','Las Personas Tristes','M','1986/02/19','PAC','150512','A'),
+('Sakura Nami','Velasquez Marquez','989899009','71212345','Las Cosas rojas','F','1986/03/11','PAC','150512','A'),
+('Luis Angel','Alvarez de la Cruz','924123656','72722578','Urb San Agustin Mz C Lt 10','M','1998/05/22','PAC','150512','A'),
+('Cesar Carlos','Cotrina Florez','978000909','78978231','Pasaje los duraznos','M','1991/10/01','PAC','150512','A'),
+('Juana Rosa','Melano Alvarez','987790112','78769980','Pasaje los mangos Mz A Lt 1','F','1991/12/25','PAC','150512','A'),
+('Antonio Elver','Galarga Chumpitaz','989123321','76767776','Urbanizacion los Reyes','M','1990/05/17','PAC','150512','A'),
+('Bryan Juan','Nuñes Celis','989102900','72455651','Las Malvinas por el paradero','M','1999/04/26','PAC','150512','A'),
+('Ivan Augusto','Rojas Marin','921253121','72319098','Las Reinas','M','1998/07/24','PAC','150512','A'),
+('Rias Akeno','Gremory Demond','989121433','78887809','Por el parque de quilmana','F','1990/06/30','PAC','150512','A'),
+('Alberto Enrique','Arias Mendoza','947989923','72724356','Los Tornillos Oxidados en Su casa','M','1983/09/13','PAC','150512','A'),
+('Piero Diego','Valencia Canale','989921890','76524320','Las Cosas azules','M','1988/09/12','PAC','150512','A'),
+('Manuel Patricio','Vazquez Canales','999098655','78979119','Las Personas Tristes','M','1989/02/13','PAC','150512','A'),
+('Gloria Iris','Yazuco Tenorio','989899155','71212983','Las Cosas rojas','F','1985/02/20','PAC','150512','A');
 
+select * from persona;
 
 -- INSERCION DE REGISTROS A LA TABLA PACIENTE
 
 INSERT INTO 
 PACIENTE (IDPER,ESTCIVPAC,FECREGPAC,ESTPAC) 
 VALUES
-('4','S','2019/10/19','A'),
-('5','S','2019/10/19','A'),
-('6','S','2019/10/19','A'),
-('7','C','2019/10/19','A'),
-('8','S','2019/10/19','A'),
-('9','C','2019/10/19','A'),
-('10','C','2019/10/19','A'),
-('11','C','2019/10/19','A'),
-('12','C','2019/10/19','A'),
-('3','C','2019/10/19','A');
+('4','S','2019/11/04','A'),
+('5','S','2019/11/04','A'),
+('6','S','2019/11/04','A'),
+('7','C','2019/11/04','A'),
+('8','S','2019/11/04','A'),
+('9','C','2019/11/04','A'),
+('10','C','2019/11/04','A'),
+('11','C','2019/11/04','A'),
+('12','C','2019/11/04','A'),
+('13','S','2019/11/04','A'),
+('14','C','2019/11/04','A'),
+('15','S','2019/11/04','A'),
+('16','S','2019/11/04','A'),
+('17','C','2019/11/04','A'),
+('18','S','2019/11/04','A'),
+('19','C','2019/11/04','A'),
+('20','C','2019/11/04','A'),
+('21','C','2019/11/04','A'),
+('22','C','2019/11/04','A'),
+('23','C','2019/11/04','A'),
+('24','C','2019/11/04','A'),
+('25','S','2019/11/04','A'),
+('26','S','2019/11/04','A'),
+('27','C','2019/11/04','A'),
+('28','S','2019/11/04','A'),
+('29','C','2019/11/04','A'),
+('30','C','2019/11/04','A'),
+('31','C','2019/11/04','A'),
+('32','C','2019/11/04','A'),
+('33','C','2019/11/04','A'),
+('34','C','2019/11/04','A');
 
 
 -- INSERCION DE REGISTRO A LA TABLA ESTABLECIMIENTO
@@ -1879,14 +1920,25 @@ VALUES
 INSERT INTO 
 ESTABLECIMIENTO (NOMEST,DIREST,TELEST,CODUBI,ESTEST) 
 VALUES
-('Centro de Salud Quilmana','Quilmaná 15712','4877898','150512','A'),
-('Centro de Salud San Vicente','San Viocente 15712','4877898','150512','A'),
-('Centro de Salud Imperial','Imperial 15712','4877898','150512','A'),
-('Centro de Salud Cerro Alegre','Cerro Alegre 15712','4877898','150512','A'),
-('Centro de Salud Cerro Azul','Cerro Azul 15712','4877898','150512','A'),
-('Centro de Salud Lunahuana','Lunahuana 15712','4877898','150512','A'),
-('Centro de Salud Asia','Asia 15712','4877898','150512','A'),
-('Centro de Salud Mala','Mala 15712','4877898','150512','A');
+('Centro de Salud Quilmana','Quilmaná 15712','4877123','150512','I'),
+('Centro de Salud San Vicente','San Vicente 15712','4877456','150501','I'),
+('Centro de Salud Imperial','Imperial 15712','4877898','1505789','I'),
+('Centro de Salud San Luis','San Luis 15712','4877898','150214','I'),
+('Centro de Salud Cerro Azul','Cerro Azul 15712','4877198','150504','I'),
+('Centro de Salud Lunahuana','Lunahuana 15712','4277898','150508','I'),
+('Centro de Salud Asia','Asia 15712','4877338','150502','I'),
+('Centro de Salud Mala','Mala 15712','4871828','150509','I'),
+('Centro de Salud Zuñiga','Zuñiga 15712','4877823','150516','I'),
+('Centro de Salud Calango','Calango 15712','4810098','150503','I'),
+('Centro de Salud Chilca','Chilca 15712','4877123','150505','I'),
+('Centro de Salud Coayllo','Coayllo 15712','4377898','150506','I'),
+('Centro de Salud Nuevo Imperial','Nuevo Imperial 15712','4871218','150510','I'),
+('Centro de Salud San Antonio','San Antonio 15712','4870008','150513','I'),
+('Centro de Salud Pacaran','Pacaran 15712','4871231','150511','I'),
+('Centro de Salud Santa Cruz de Flores','Santa Cruz de Florez 15712','4898998','150515','I'),
+('Centro de Salud Lima','Lima 15712','4877123','150101','I'),
+('Centro de Salud Jaen','Jaen 15712','4877892','060812','I'),
+('Centro de Salud Tacna','Tacna 15712','4877891','230101','I');
 
 INSERT INTO 
 ESPECIALIDAD (DESESP,ESTESP) 
@@ -1984,7 +2036,7 @@ VALUES
 ('Jamal','123456','U','A'),
 ('Khalil','123456','U','A'),
 ('Rayan','123456','U','A'),
-('Walid','123456','U','I');
+('Walid','123456','U','I'),
 ('Atticus','LUIS123','U','I'),
 ('Wyatt','123456','U','A'),
 ('Oliver','123456','U','A'),
@@ -2009,7 +2061,6 @@ VALUES
 ('50','1.60','150519',2,'2000/12/14'),
 ('35','1.50','150520',3,'2000/12/14'),
 ('86','1.40','150521',4,'2000/12/14'),
-
 ('39','1.60','150513',2,'2000/12/14'),
 ('46','1.50','150522',3,'2000/12/14'),
 ('40','1.65','150535',4,'2000/12/14'),
@@ -2028,7 +2079,6 @@ VALUES
 ('61','1.60','150569',2,'2000/12/14'),
 ('73','1.50','150530',3,'2000/12/14'),
 ('91','1.40','150541',4,'2000/12/14'),
-
 ('63','1.60','150553',2,'2000/12/14'),
 ('39','1.50','150564',3,'2000/12/14'),
 ('36','1.65','150513',4,'2000/12/14'),
@@ -2038,7 +2088,6 @@ VALUES
 ('56','1.60','150530',2,'2000/12/14'),
 ('39','1.50','150550',3,'2000/12/14'),
 ('70','1.40','150565',4,'2000/12/14'),
-
 ('42','1.60','150594',2,'2000/12/14'),
 ('36','1.50','150583',3,'2000/12/14'),
 ('31','1.65','150564',4,'2000/12/14'),
@@ -2062,8 +2111,7 @@ VALUES
 (8,3,8,'E','2000/12/11','jesus@gmail.com',5,'A'),
 (9,3,1,'E','2000/12/11','taquire@gmail.com',5,'A'),
 (10,3,1,'E','2000/12/11','diego@gmail.com',5,'A'),
-(11,4,1,'E','2000/12/10','yalle@gmail.com',6,'A');
-
+(11,4,1,'E','2000/12/10','yalle@gmail.com',6,'A'),
 (1,1,1,'J','2000/12/24','Mateo@gmail.com',1,'A'),
 (2,2,2,'E','2000/12/05','Daniel@gmail.com',2,'A'),
 (3,3,3,'E','2000/12/23','Pablo@gmail.com',3,'A'),
@@ -2074,8 +2122,7 @@ VALUES
 (8,3,8,'E','2000/12/01','Marcos@gmail.com',5,'A'),
 (9,3,1,'E','2000/12/19','Martín@gmail.com',5,'A'),
 (10,3,1,'E','2000/12/19','Nicolás@gmail.com',5,'A'),
-(11,4,1,'E','2000/12/20','Jorge@gmail.com',6,'A');
-
+(11,4,1,'E','2000/12/20','Jorge@gmail.com',6,'A'),
 (1,1,1,'J','2000/12/14','Iván@gmail.com',1,'A'),
 (2,2,2,'E','2000/12/15','Carlos@gmail.com',2,'A'),
 (3,3,3,'E','2000/12/13','Miguel@gmail.com',3,'A'),
@@ -2086,8 +2133,7 @@ VALUES
 (8,3,8,'E','2000/12/11','Farid@gmail.com',5,'A'),
 (9,3,1,'E','2000/12/11','Hakim@gmail.com',5,'A'),
 (10,3,1,'E','2000/12/11','diego@gmail.com',5,'A'),
-(11,4,1,'E','2000/12/10','Ibrahim@gmail.com',6,'A');
-
+(11,4,1,'E','2000/12/10','Ibrahim@gmail.com',6,'A'),
 (1,1,1,'J','2000/12/14','Jamal@gmail.com',1,'A'),
 (2,2,2,'E','2000/12/15','Khalil@gmail.com',2,'A'),
 (3,3,3,'E','2000/12/13','Moad@gmail.com',3,'A'),
@@ -2100,7 +2146,6 @@ VALUES
 (10,3,1,'E','2000/12/11','Ezra@gmail.com',5,'A'),
 (11,4,1,'E','2000/12/10','Silas@gmail.com',6,'A');
 
-SELECT * FROM UBIGEO;
 
 
 
