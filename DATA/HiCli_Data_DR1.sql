@@ -1,4 +1,4 @@
-
+﻿
 USE hicli;
 
 -- INSERCION DE REGISTROS EN LA TABLA UBIGEO
@@ -1892,15 +1892,65 @@ INSERT INTO
 ESPECIALIDAD (DESESP,ESTESP) 
 VALUES
 ('ADMINISTRADOR','A'),
-('SECRETARIA','A'),
+('SECRETARIA','I'),
 ('SERVICIO DOCUMENTARIO','A'),
 ('FINANZAS','A'),
 ('RECURSOS HUMANOS','A'),
 ('LOGISTICA','A'),
 ('ODONTOLOGIA','A'),
+('CIRUGIA','I'),
+('SANIDAD','I'),
+('INFORMATICA','A'),
+('ADMINISTRADOR','A'),
+('SECRETARIA','A'),
+('SERVICIO DOCUMENTARIO','A'),
+('FINANZAS','A'),
+('RECURSOS HUMANOS','I'),
+('LOGISTICA','A'),
+('ODONTOLOGIA','I'),
 ('CIRUGIA','A'),
 ('SANIDAD','A'),
-('INFORMATICA','A');
+('INFORMATICA','I'),
+('ADMINISTRADOR','A'),
+('SECRETARIA','A'),
+('SERVICIO DOCUMENTARIO','I'),
+('FINANZAS','A'),
+('RECURSOS HUMANOS','I'),
+('LOGISTICA','I'),
+('ODONTOLOGIA','A'),
+('CIRUGIA','A'),
+('SANIDAD','A'),
+('INFORMATICA','I'),
+('ADMINISTRADOR','A'),
+('SECRETARIA','A'),
+('SERVICIO DOCUMENTARIO','I'),
+('FINANZAS','A'),
+('RECURSOS HUMANOS','A'),
+('LOGISTICA','A'),
+('ODONTOLOGIA','I'),
+('CIRUGIA','A'),
+('SANIDAD','I'),
+('INFORMATICA','A'),
+('ADMINISTRADOR','I'),
+('SECRETARIA','A'),
+('SERVICIO DOCUMENTARIO','A'),
+('FINANZAS','A'),
+('RECURSOS HUMANOS','A'),
+('LOGISTICA','I'),
+('ODONTOLOGIA','A'),
+('CIRUGIA','I'),
+('SANIDAD','A'),
+('INFORMATICA','A'),
+('ADMINISTRADOR','A'),
+('SECRETARIA','I'),
+('SERVICIO DOCUMENTARIO','A'),
+('FINANZAS','A'),
+('RECURSOS HUMANOS','A'),
+('LOGISTICA','A'),
+('ODONTOLOGIA','I'),
+('CIRUGIA','I'),
+('SANIDAD','A'),
+('INFORMATICA','I');
 
 INSERT INTO 
 USUARIO (NAMUSE,PASUSE,TIPUSE,ESTUSE) 
@@ -1914,7 +1964,37 @@ VALUES
 ('BENJAMIN','123456','U','A'),
 ('JEFERSON','123456','U','A'),
 ('ADMIN','123456','A','A'),
-('USER','123456','U','A');
+('USER','123456','U','A'),
+('Mateo','mateo123','U','I'),
+('Daniel','123456','U','I'),
+('Pablo','123456','A','A'),
+('Álvaro','123456','U','I'),
+('Adrián','123456','U','A'),
+('JESUSga','123456','U','A'),
+('BENJAMINdi','123456','U','A'),
+('David','123456','U','A'),
+('Diego','123456','A','I'),
+('Javier','123456','U','I'),
+('LUIS','LUIS123','U','A'),
+('Mario','123456','U','A'),
+('Marcos','123456','U','I'),
+('Nicolás','123456','U','A'),
+('Iván','123456','U','I'),
+('Habib','123456','U','A'),
+('Jamal','123456','U','A'),
+('Khalil','123456','U','A'),
+('Rayan','123456','U','A'),
+('Walid','123456','U','I');
+('Atticus','LUIS123','U','I'),
+('Wyatt','123456','U','A'),
+('Oliver','123456','U','A'),
+('Henry','123456','U','A'),
+('Milo','123456','U','I'),
+('Liam','123456','U','A'),
+('Alexander','123456','U','I'),
+('Luke','123456','U','A'),
+('Everett','123456','U','A'),
+('Simón','123456','U','I');
 
 INSERT INTO 
 HISTORIA_CLINICA (PESO,ALTURA,IDPAC,IDTRA,FECHISCLI) 
@@ -1928,7 +2008,46 @@ VALUES
 ('70','1.70','150518',7,'2000/12/14'),
 ('50','1.60','150519',2,'2000/12/14'),
 ('35','1.50','150520',3,'2000/12/14'),
-('86','1.40','150521',4,'2000/12/14');
+('86','1.40','150521',4,'2000/12/14'),
+
+('39','1.60','150513',2,'2000/12/14'),
+('46','1.50','150522',3,'2000/12/14'),
+('40','1.65','150535',4,'2000/12/14'),
+('69','1.70','150526',5,'2000/12/14'),
+('89','1.71','150537',6,'2000/12/14'),
+('90','1.70','150548',7,'2000/12/14'),
+('80','1.60','150559',2,'2000/12/14'),
+('76','1.50','150570',3,'2000/12/14'),
+('86','1.40','150591',4,'2000/12/14'),
+('36','1.60','150543',2,'2000/12/14'),
+('22','1.50','150534',3,'2000/12/14'),
+('19','1.65','150505',4,'2000/12/14'),
+('18','1.70','150566',5,'2000/12/14'),
+('64','1.71','150577',6,'2000/12/14'),
+('63','1.70','150588',7,'2000/12/14'),
+('61','1.60','150569',2,'2000/12/14'),
+('73','1.50','150530',3,'2000/12/14'),
+('91','1.40','150541',4,'2000/12/14'),
+
+('63','1.60','150553',2,'2000/12/14'),
+('39','1.50','150564',3,'2000/12/14'),
+('36','1.65','150513',4,'2000/12/14'),
+('68','1.70','150519',5,'2000/12/14'),
+('82','1.71','150511',6,'2000/12/14'),
+('73','1.70','150512',7,'2000/12/14'),
+('56','1.60','150530',2,'2000/12/14'),
+('39','1.50','150550',3,'2000/12/14'),
+('70','1.40','150565',4,'2000/12/14'),
+
+('42','1.60','150594',2,'2000/12/14'),
+('36','1.50','150583',3,'2000/12/14'),
+('31','1.65','150564',4,'2000/12/14'),
+('93','1.70','150563',5,'2000/12/14'),
+('88','1.71','150523',6,'2000/12/14'),
+('77','1.70','150516',7,'2000/12/14'),
+('55','1.60','150511',2,'2000/12/14'),
+('33','1.50','150520',3,'2000/12/14'),
+('88','1.40','150523',4,'2000/12/14');
 
 INSERT INTO
 TRABAJADOR (IDPER,IDESP,IDEST,CARTRA,FECREGTRA,EMAILTRA,IDUSE,ESTTRA)
@@ -1944,6 +2063,43 @@ VALUES
 (9,3,1,'E','2000/12/11','taquire@gmail.com',5,'A'),
 (10,3,1,'E','2000/12/11','diego@gmail.com',5,'A'),
 (11,4,1,'E','2000/12/10','yalle@gmail.com',6,'A');
+
+(1,1,1,'J','2000/12/24','Mateo@gmail.com',1,'A'),
+(2,2,2,'E','2000/12/05','Daniel@gmail.com',2,'A'),
+(3,3,3,'E','2000/12/23','Pablo@gmail.com',3,'A'),
+(4,2,4,'E','2000/12/22','Álvaro@gmail.com',4,'A'),
+(5,3,5,'E','2000/12/21','David@gmail.com',5,'A'),
+(6,3,6,'E','2000/12/21','Javier@gmail.com',5,'A'),
+(7,3,7,'E','2000/12/31','Sergio@gmail.com',5,'A'),
+(8,3,8,'E','2000/12/01','Marcos@gmail.com',5,'A'),
+(9,3,1,'E','2000/12/19','Martín@gmail.com',5,'A'),
+(10,3,1,'E','2000/12/19','Nicolás@gmail.com',5,'A'),
+(11,4,1,'E','2000/12/20','Jorge@gmail.com',6,'A');
+
+(1,1,1,'J','2000/12/14','Iván@gmail.com',1,'A'),
+(2,2,2,'E','2000/12/15','Carlos@gmail.com',2,'A'),
+(3,3,3,'E','2000/12/13','Miguel@gmail.com',3,'A'),
+(4,2,4,'E','2000/12/12','Lucas@gmail.com',4,'A'),
+(5,3,5,'E','2000/12/11','Adib@gmail.com',5,'A'),
+(6,3,6,'E','2000/12/11','Akram@gmail.com',5,'A'),
+(7,3,7,'E','2000/12/11','Bahir@gmail.com',5,'A'),
+(8,3,8,'E','2000/12/11','Farid@gmail.com',5,'A'),
+(9,3,1,'E','2000/12/11','Hakim@gmail.com',5,'A'),
+(10,3,1,'E','2000/12/11','diego@gmail.com',5,'A'),
+(11,4,1,'E','2000/12/10','Ibrahim@gmail.com',6,'A');
+
+(1,1,1,'J','2000/12/14','Jamal@gmail.com',1,'A'),
+(2,2,2,'E','2000/12/15','Khalil@gmail.com',2,'A'),
+(3,3,3,'E','2000/12/13','Moad@gmail.com',3,'A'),
+(4,2,4,'E','2000/12/12','Omar@gmail.com',4,'A'),
+(5,3,5,'E','2000/12/11','Rayan@gmail.com',5,'A'),
+(6,3,6,'E','2000/12/11','Walid@gmail.com',5,'A'),
+(7,3,7,'E','2000/12/11','Zaid@gmail.com',5,'A'),
+(8,3,8,'E','2000/12/11','Atticus@gmail.com',5,'A'),
+(9,3,1,'E','2000/12/11','Asher@gmail.com',5,'A'),
+(10,3,1,'E','2000/12/11','Ezra@gmail.com',5,'A'),
+(11,4,1,'E','2000/12/10','Silas@gmail.com',6,'A');
+
 SELECT * FROM UBIGEO;
 
 
