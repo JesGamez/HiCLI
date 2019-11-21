@@ -9,7 +9,7 @@ use hicli;
 -- Table: ESPECIALIDAD
 
 
-CREATE  or REPLACE TABLE ESPECIALIDAD (
+CREATE  OR REPLACE TABLE ESPECIALIDAD (
     IDESP int NOT NULL AUTO_INCREMENT COMMENT 'Código identificador de la Especialidad.',
     DESESP varchar(50) NULL COMMENT 'Descripción de la Especialidad',
     ESTESP char(1) NULL COMMENT 'Estado de Activo o Inactivo.',
