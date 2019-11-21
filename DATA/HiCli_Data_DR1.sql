@@ -1,5 +1,4 @@
-﻿
-USE hicli;
+use hicli;
 
 -- INSERCION DE REGISTROS EN LA TABLA UBIGEO
 
@@ -1921,24 +1920,24 @@ INSERT INTO
 ESTABLECIMIENTO (NOMEST,DIREST,TELEST,CODUBI,ESTEST) 
 VALUES
 ('Centro de Salud Quilmana','Quilmaná 15712','4877123','150512','I'),
-('Centro de Salud San Vicente','San Vicente 15712','4877456','150501','I'),
-('Centro de Salud Imperial','Imperial 15712','4877898','1505789','I'),
-('Centro de Salud San Luis','San Luis 15712','4877898','150214','I'),
-('Centro de Salud Cerro Azul','Cerro Azul 15712','4877198','150504','I'),
-('Centro de Salud Lunahuana','Lunahuana 15712','4277898','150508','I'),
+('Centro de Salud San Vicente','San Vicente 15712','4877456','150502','I'),
+('Centro de Salud Imperial','Imperial 15712','4877898','150502','I'),
+('Centro de Salud San Luis','San Luis 15712','4877898','150502','I'),
+('Centro de Salud Cerro Azul','Cerro Azul 15712','4877198','150502','I'),
+('Centro de Salud Lunahuana','Lunahuana 15712','4277898','150502','I'),
 ('Centro de Salud Asia','Asia 15712','4877338','150502','I'),
-('Centro de Salud Mala','Mala 15712','4871828','150509','I'),
-('Centro de Salud Zuñiga','Zuñiga 15712','4877823','150516','I'),
-('Centro de Salud Calango','Calango 15712','4810098','150503','I'),
-('Centro de Salud Chilca','Chilca 15712','4877123','150505','I'),
-('Centro de Salud Coayllo','Coayllo 15712','4377898','150506','I'),
-('Centro de Salud Nuevo Imperial','Nuevo Imperial 15712','4871218','150510','I'),
-('Centro de Salud San Antonio','San Antonio 15712','4870008','150513','I'),
-('Centro de Salud Pacaran','Pacaran 15712','4871231','150511','I'),
-('Centro de Salud Santa Cruz de Flores','Santa Cruz de Florez 15712','4898998','150515','I'),
-('Centro de Salud Lima','Lima 15712','4877123','150101','I'),
-('Centro de Salud Jaen','Jaen 15712','4877892','060812','I'),
-('Centro de Salud Tacna','Tacna 15712','4877891','230101','I');
+('Centro de Salud Mala','Mala 15712','4871828','150502','I'),
+('Centro de Salud Zuñiga','Zuñiga 15712','4877823','150502','I'),
+('Centro de Salud Calango','Calango 15712','4810098','150502','I'),
+('Centro de Salud Chilca','Chilca 15712','4877123','150502','I'),
+('Centro de Salud Coayllo','Coayllo 15712','4377898','150502','I'),
+('Centro de Salud Nuevo Imperial','Nuevo Imperial 15712','4871218','150502','I'),
+('Centro de Salud San Antonio','San Antonio 15712','4870008','150502','I'),
+('Centro de Salud Pacaran','Pacaran 15712','4871231','150502','I'),
+('Centro de Salud Santa Cruz de Flores','Santa Cruz de Florez 15712','4898998','150502','I'),
+('Centro de Salud Lima','Lima 15712','4877123','150502','I'),
+('Centro de Salud Jaen','Jaen 15712','4877892','150502','I'),
+('Centro de Salud Tacna','Tacna 15712','4877891','150502','I');
 
 INSERT INTO 
 ESPECIALIDAD (DESESP,ESTESP) 
