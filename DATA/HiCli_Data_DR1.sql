@@ -2047,6 +2047,54 @@ VALUES
 ('Everett','123456','U','A'),
 ('Simón','123456','U','I');
 
+INSERT INTO
+TRABAJADOR (IDPER,IDESP,IDEST,CARTRA,FECREGTRA,EMAILTRA,IDUSE,ESTTRA)
+VALUES
+(1,1,1,'J','2000/12/14','silvia@gmail.com',1,'A'),
+(2,2,2,'E','2000/12/15','juan@gmail.com',2,'A'),
+(3,3,3,'E','2000/12/13','luis@gmail.com',3,'A'),
+(4,2,4,'E','2000/12/12','juana@gmail.com',4,'A'),
+(5,3,5,'E','2000/12/11','Luis@gmail.com',5,'A'),
+(6,3,6,'E','2000/12/11','jeferson@gmail.com',5,'A'),
+(7,3,7,'E','2000/12/11','zecarlos@gmail.com',5,'A'),
+(8,3,8,'E','2000/12/11','jesus@gmail.com',5,'A'),
+(9,3,1,'E','2000/12/11','taquire@gmail.com',5,'A'),
+(10,3,1,'E','2000/12/11','diego@gmail.com',5,'A'),
+(11,4,1,'E','2000/12/10','yalle@gmail.com',6,'A'),
+(1,1,1,'J','2000/12/24','Mateo@gmail.com',1,'A'),
+(2,2,2,'E','2000/12/05','Daniel@gmail.com',2,'A'),
+(3,3,3,'E','2000/12/23','Pablo@gmail.com',3,'A'),
+(4,2,4,'E','2000/12/22','Álvaro@gmail.com',4,'A'),
+(5,3,5,'E','2000/12/21','David@gmail.com',5,'A'),
+(6,3,6,'E','2000/12/21','Javier@gmail.com',5,'A'),
+(7,3,7,'E','2000/12/31','Sergio@gmail.com',5,'A'),
+(8,3,8,'E','2000/12/01','Marcos@gmail.com',5,'A'),
+(9,3,1,'E','2000/12/19','Martín@gmail.com',5,'A'),
+(10,3,1,'E','2000/12/19','Nicolás@gmail.com',5,'A'),
+(11,4,1,'E','2000/12/20','Jorge@gmail.com',6,'A'),
+(1,1,1,'J','2000/12/14','Iván@gmail.com',1,'A'),
+(2,2,2,'E','2000/12/15','Carlos@gmail.com',2,'A'),
+(3,3,3,'E','2000/12/13','Miguel@gmail.com',3,'A'),
+(4,2,4,'E','2000/12/12','Lucas@gmail.com',4,'A'),
+(5,3,5,'E','2000/12/11','Adib@gmail.com',5,'A'),
+(6,3,6,'E','2000/12/11','Akram@gmail.com',5,'A'),
+(7,3,7,'E','2000/12/11','Bahir@gmail.com',5,'A'),
+(8,3,8,'E','2000/12/11','Farid@gmail.com',5,'A'),
+(9,3,1,'E','2000/12/11','Hakim@gmail.com',5,'A'),
+(10,3,1,'E','2000/12/11','diego@gmail.com',5,'A'),
+(11,4,1,'E','2000/12/10','Ibrahim@gmail.com',6,'A'),
+(1,1,1,'J','2000/12/14','Jamal@gmail.com',1,'A'),
+(2,2,2,'E','2000/12/15','Khalil@gmail.com',2,'A'),
+(3,3,3,'E','2000/12/13','Moad@gmail.com',3,'A'),
+(4,2,4,'E','2000/12/12','Omar@gmail.com',4,'A'),
+(5,3,5,'E','2000/12/11','Rayan@gmail.com',5,'A'),
+(6,3,6,'E','2000/12/11','Walid@gmail.com',5,'A'),
+(7,3,7,'E','2000/12/11','Zaid@gmail.com',5,'A'),
+(8,3,8,'E','2000/12/11','Atticus@gmail.com',5,'A'),
+(9,3,1,'E','2000/12/11','Asher@gmail.com',5,'A'),
+(10,3,1,'E','2000/12/11','Ezra@gmail.com',5,'A'),
+(11,4,1,'E','2000/12/10','Silas@gmail.com',6,'A');
+
 INSERT INTO 
 HISTORIA_CLINICA (PESO,ALTURA,IDPAC,IDTRA,FECHISCLI) 
 VALUES
@@ -2096,56 +2144,6 @@ VALUES
 ('55','1.60','15',2,'2000/12/14'),
 ('33','1.50','15',3,'2000/12/14'),
 ('88','1.40','15',4,'2000/12/14');
-
-INSERT INTO
-TRABAJADOR (IDPER,IDESP,IDEST,CARTRA,FECREGTRA,EMAILTRA,IDUSE,ESTTRA)
-VALUES
-(1,1,1,'J','2000/12/14','silvia@gmail.com',1,'A'),
-(2,2,2,'E','2000/12/15','juan@gmail.com',2,'A'),
-(3,3,3,'E','2000/12/13','luis@gmail.com',3,'A'),
-(4,2,4,'E','2000/12/12','juana@gmail.com',4,'A'),
-(5,3,5,'E','2000/12/11','Luis@gmail.com',5,'A'),
-(6,3,6,'E','2000/12/11','jeferson@gmail.com',5,'A'),
-(7,3,7,'E','2000/12/11','zecarlos@gmail.com',5,'A'),
-(8,3,8,'E','2000/12/11','jesus@gmail.com',5,'A'),
-(9,3,1,'E','2000/12/11','taquire@gmail.com',5,'A'),
-(10,3,1,'E','2000/12/11','diego@gmail.com',5,'A'),
-(11,4,1,'E','2000/12/10','yalle@gmail.com',6,'A'),
-(1,1,1,'J','2000/12/24','Mateo@gmail.com',1,'A'),
-(2,2,2,'E','2000/12/05','Daniel@gmail.com',2,'A'),
-(3,3,3,'E','2000/12/23','Pablo@gmail.com',3,'A'),
-(4,2,4,'E','2000/12/22','Álvaro@gmail.com',4,'A'),
-(5,3,5,'E','2000/12/21','David@gmail.com',5,'A'),
-(6,3,6,'E','2000/12/21','Javier@gmail.com',5,'A'),
-(7,3,7,'E','2000/12/31','Sergio@gmail.com',5,'A'),
-(8,3,8,'E','2000/12/01','Marcos@gmail.com',5,'A'),
-(9,3,1,'E','2000/12/19','Martín@gmail.com',5,'A'),
-(10,3,1,'E','2000/12/19','Nicolás@gmail.com',5,'A'),
-(11,4,1,'E','2000/12/20','Jorge@gmail.com',6,'A'),
-(1,1,1,'J','2000/12/14','Iván@gmail.com',1,'A'),
-(2,2,2,'E','2000/12/15','Carlos@gmail.com',2,'A'),
-(3,3,3,'E','2000/12/13','Miguel@gmail.com',3,'A'),
-(4,2,4,'E','2000/12/12','Lucas@gmail.com',4,'A'),
-(5,3,5,'E','2000/12/11','Adib@gmail.com',5,'A'),
-(6,3,6,'E','2000/12/11','Akram@gmail.com',5,'A'),
-(7,3,7,'E','2000/12/11','Bahir@gmail.com',5,'A'),
-(8,3,8,'E','2000/12/11','Farid@gmail.com',5,'A'),
-(9,3,1,'E','2000/12/11','Hakim@gmail.com',5,'A'),
-(10,3,1,'E','2000/12/11','diego@gmail.com',5,'A'),
-(11,4,1,'E','2000/12/10','Ibrahim@gmail.com',6,'A'),
-(1,1,1,'J','2000/12/14','Jamal@gmail.com',1,'A'),
-(2,2,2,'E','2000/12/15','Khalil@gmail.com',2,'A'),
-(3,3,3,'E','2000/12/13','Moad@gmail.com',3,'A'),
-(4,2,4,'E','2000/12/12','Omar@gmail.com',4,'A'),
-(5,3,5,'E','2000/12/11','Rayan@gmail.com',5,'A'),
-(6,3,6,'E','2000/12/11','Walid@gmail.com',5,'A'),
-(7,3,7,'E','2000/12/11','Zaid@gmail.com',5,'A'),
-(8,3,8,'E','2000/12/11','Atticus@gmail.com',5,'A'),
-(9,3,1,'E','2000/12/11','Asher@gmail.com',5,'A'),
-(10,3,1,'E','2000/12/11','Ezra@gmail.com',5,'A'),
-(11,4,1,'E','2000/12/10','Silas@gmail.com',6,'A');
-
-
 
 
 
