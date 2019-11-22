@@ -1,5 +1,4 @@
 use hicli;
-
 -- INSERCION DE REGISTROS EN LA TABLA UBIGEO
 
 INSERT INTO UBIGEO (CODUBI, DEPUBI, PROVUBI, DISTUBI) VALUES  ('010101','AMAZONAS','CHACHAPOYAS','CHACHAPOYAS');
@@ -1874,8 +1873,6 @@ INSERT INTO PERSONA (NOMPER,APEPER,CELPER,DNIPER,DIRPER,SEXPER,FECNACPER,TIPPER,
 ('Manuel Patricio','Vazquez Canales','999098655','78979119','Las Personas Tristes','M','1989/02/13','PAC','150512','A'),
 ('Gloria Iris','Yazuco Tenorio','989899155','71212983','Las Cosas rojas','F','1985/02/20','PAC','150512','A');
 
-select * from persona;
-
 -- INSERCION DE REGISTROS A LA TABLA PACIENTE
 
 INSERT INTO 
@@ -1914,6 +1911,32 @@ VALUES
 ('34','C','2019/11/04','A');
 
 
+-- INSERCION DE REGISTROS A LA TABLA PACIENTE_ACOMPAÑANTE
+
+INSERT INTO 
+PACIENTE_ACOMPANANTE (IDPAC,IDPER,TIPACO,FECPACACO,ESTPACACO) 
+VALUES
+('4','34','P','2019/11/21','A'),
+('6','33','M','2019/11/21','A'),
+('7','32','M','2019/11/21','A'),
+('8','31','M','2019/11/21','A'),
+('9','30','P','2019/11/21','A'),
+('11','29','P','2019/11/21','A'),
+('14','28','P','2019/11/21','A'),
+('16','27','P','2019/11/21','A'),
+('17','26','P','2019/11/21','A'),
+('18','25','P','2019/11/21','A'),
+('19','24','P','2019/11/21','A'),
+('20','23','P','2019/11/21','A'),
+('21','22','P','2019/11/21','A'),
+('24','21','P','2019/11/21','A'),
+('26','20','O','2019/11/21','A'),
+('27','19','P','2019/11/21','A'),
+('28','18','P','2019/11/21','A'),
+('29','17','O','2019/11/21','A'),
+('30','16','P','2019/11/21','A'),
+('31','15','O','2019/11/21','A');
+
 -- INSERCION DE REGISTRO A LA TABLA ESTABLECIMIENTO
 
 INSERT INTO 
@@ -1939,6 +1962,34 @@ VALUES
 ('Centro de Salud Jaen','Jaen 15712','4877892','150502','I'),
 ('Centro de Salud Tacna','Tacna 15712','4877891','150502','I');
 
+-- INSERCION DE REGISTROS A LA TABLA ENFERMEDADES.
+INSERT INTO 
+ENFERMEDAD (CODENF,DESCENF) 
+VALUES
+('A00-B99','Ciertas enfermedades infecciosas y parasitarias'),
+('C00-D48','Neoplasias'),
+('D50-D89','Enfermedades de la sangre y de los órganos hematopoyéticos y otros trastornos que afectan el mecanismo de la inmunidad'),
+('E00-E90','Enfermedades endocrinas, nutricionales y metabólicas'),
+('F00-F99','Trastornos mentales y del comportamiento'),
+('G00-G99','Enfermedades del sistema nervioso'),
+('H00-H59','Enfermedades del ojo y sus anexos'),
+('H60-H95','Enfermedades del oído y de la apófisis mastoides'),
+('I00-I99','Enfermedades del sistema circulatorio'),
+('J00-J99','Enfermedades del sistema respiratorio'),
+('K00-K93','Enfermedades del aparato digestivo'),
+('L00-L99','Enfermedades de la piel y el tejido subcutáneo'),
+('M00-M99','Enfermedades del sistema osteomuscular y del tejido conectivo'),
+('N00-N99','Enfermedades del aparato genitourinario'),
+('O00-O99','Embarazo, parto y puerperio'),
+('P00-P96','Ciertas afecciones originadas en el periodo perinatal'),
+('Q00-Q99','Malformaciones congénitas, deformidades y anomalías cromosómicas'),
+('R00-R99','Síntomas, signos y hallazgos anormales clínicos y de laboratorio, no clasificados en otra parte'),
+('S00-T98','Traumatismos, envenenamientos y algunas otras consecuencias de causa externa'),
+('V01-Y98','Causas externas de morbilidad y de mortalidad'),
+('Z00-Z99','Factores que influyen en el estado de salud y contacto con los servicios de salud'),
+('U00-U99','Códigos para situaciones especiales');
+
+-- INSERCION DE REGISTROS EN LA TABLA ESPECIALIDAD
 INSERT INTO 
 ESPECIALIDAD (DESESP,ESTESP) 
 VALUES
@@ -2003,6 +2054,8 @@ VALUES
 ('SANIDAD','A'),
 ('INFORMATICA','I');
 
+
+-- INSERCION DE REGISTROS EN LA TABLA USUARIOS
 INSERT INTO 
 USUARIO (NAMUSE,PASUSE,TIPUSE,ESTUSE) 
 VALUES
@@ -2047,6 +2100,8 @@ VALUES
 ('Everett','123456','U','A'),
 ('Simón','123456','U','I');
 
+
+-- INSERCION DE REGISTROS EN LA TABLA TRABAJADOR
 INSERT INTO
 TRABAJADOR (IDPER,IDESP,IDEST,CARTRA,FECREGTRA,EMAILTRA,IDUSE,ESTTRA)
 VALUES
@@ -2095,10 +2150,11 @@ VALUES
 (10,3,1,'E','2000/12/11','Ezra@gmail.com',5,'A'),
 (11,4,1,'E','2000/12/10','Silas@gmail.com',6,'A');
 
+
+-- INSERCION DE REGISTROS EN LA TABLA HISTORIAS CLINICAS
 INSERT INTO 
 HISTORIA_CLINICA (PESO,ALTURA,IDPAC,IDTRA,FECHISCLI) 
 VALUES
-
 ('47','1.60','15',2,'2000/12/14'),
 ('30','1.50','15',3,'2000/12/14'),
 ('35','1.65','15',4,'2000/12/14'),

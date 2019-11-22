@@ -1,4 +1,4 @@
-## Base de Datos HiCli
+﻿## Base de Datos HiCli
 
 Contiene la Base de Datos de Historias Clinicas, realizado en el motor MySQL.
 Se desarrollo con la finalidad de mostrar que la implementacion de un sistema 
@@ -27,6 +27,12 @@ Esta base de datos estar� conformada por las siguientes tablas:
 
 - **ESPECIALIDAD:** Esta tabla contiene todas las Especialidades de los trabajadores.
 
+- **PACIENTE_ACOMPAÑANTE:** Aqui se registraran las personas que tengan acompañantes..
+
+- **ENFERMEDAD:** Aqui se registraran todas las enfermedades que existen hasta el dia de hoy..
+
+- **CONSULTA_ENFERMEDAD:** Una persona puede tener múltiples enfermedades a lo largo de su historia clinica y para esto es esta tabla..
+
 ### Relaciones entre tablas
 
 Para establecer las relaciones debe tener en cuenta lo siguiente:
@@ -49,12 +55,29 @@ Para establecer las relaciones debe tener en cuenta lo siguiente:
 
 **9.** Un trabajador puede tener una especialidad.
 
+**10.** Un paciente puede tener un acompañante dependiendo de su edad.
+
+**11.** Una Historia Clinica puede albergar multiples enfermedades.
+
 ### Requerimientos Funcionales
 
-**1.** Que no haya redundancia de datos.
+**1.** Listado de trabajadores agrupados por especialidad.
 
-**2.** Saber donde hay una historia clinica 
+**2.** Listado de especialidades, trabajadores, personas y establecimientos con estado ACTIVO.
 
-**3.** Reportes
+**3.** Consulta que visualice en que establecimientos se atendió el paciente.
 
-**4.** Control de acceso a usuarios
+**4.** Reporte de especialidades de estado activo o inactiva.
+
+**5.** Consulta de pacientes atendidos por establecimiento.
+
+**6.** Cuántos pacientes se atendieron por dia agrupados por un establecimiento.
+
+**7.** Lista de la cantidad de trabajadores por establecimiento.
+
+**8.** Vista de los pacientes con sus respectivos acompañantes con busqueda con parametros.
+
+**9.** Listado de las enfermedades que más afectan a los pacientes.
+
+**10.** Vista que muestre un listado de todos los pacientes que tienen una Historia clínica por sexo.
+
