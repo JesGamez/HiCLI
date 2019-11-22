@@ -1,5 +1,5 @@
 -- Created by Vertabelo (http://vertabelo.com)
-
+drop database if exists hicli;
 -- Last modification date: 2019-10-19 04:05:13.438
 CREATE DATABASE IF NOT EXISTS hicli
 DEFAULT CHARACTER SET utf8;
