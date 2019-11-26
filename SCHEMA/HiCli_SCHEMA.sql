@@ -1,12 +1,8 @@
-﻿-- Created by Vertabelo (http://vertabelo.com)
+-- Created by Vertabelo (http://vertabelo.com)
+-- Last modification date: 2019-11-26 15:50:34.558
 
--- Last modification date: 2019-10-19 04:05:13.438
-CREATE DATABASE IF NOT EXISTS hicli
-DEFAULT CHARACTER SET utf8;
-
-use hicli;
 -- tables
--- Table: ESPECIALIDAD
+-- Table: CONSULTA_ENFERMEDAD
 CREATE TABLE CONSULTA_ENFERMEDAD (
     IDCONENF int NOT NULL AUTO_INCREMENT COMMENT 'ID identificador de la tala Consulta_Enfermedad.',
     FECCONENF date NULL COMMENT 'Fecha en que se realizo la consulta.',
@@ -18,7 +14,7 @@ CREATE TABLE CONSULTA_ENFERMEDAD (
 -- Table: ENFERMEDAD
 CREATE TABLE ENFERMEDAD (
     CODENF char(7) NOT NULL COMMENT 'Codigo identificador de enfermedad.',
-    DESCENF varchar(150) NULL COMMENT 'Descripcion de enfermedad.',
+    DESCENF varchar(100) NULL COMMENT 'Descripcion de enfermedad.',
     CONSTRAINT ENFERMEDAD_pk PRIMARY KEY (CODENF)
 ) COMMENT 'Aqui se registraran todas las enfermedades que existen hasta el dia de hoy.';
 
@@ -44,8 +40,8 @@ CREATE TABLE ESTABLECIMIENTO (
 -- Table: HISTORIA_CLINICA
 CREATE TABLE HISTORIA_CLINICA (
     CODHISCLI int NOT NULL AUTO_INCREMENT COMMENT 'Identificador de cada Historia Clinica.',
-    PESO numeric(6,2) NULL COMMENT 'Peso de cada paciente.',
-    ALTURA numeric(6,2) NULL COMMENT 'Altura de cada paciente.',
+    PESHISCLI numeric(6,2) NULL COMMENT 'Peso de cada paciente.',
+    ALTHISCLI numeric(6,2) NULL COMMENT 'Altura de cada paciente.',
     IDPAC int NOT NULL COMMENT 'Codigo de cada Paciente.',
     IDTRA int NOT NULL COMMENT 'Codigo de cada trabajador.',
     FECHISCLI date NULL COMMENT 'Fecha en que se realizo cada Historia Clinica.',
