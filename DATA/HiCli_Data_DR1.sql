@@ -1945,24 +1945,24 @@ INSERT INTO
 ESTABLECIMIENTO (NOMEST,DIREST,TELEST,CODUBI,ESTEST) 
 VALUES
 ('Centro de Salud Quilmana','Quilmaná 15712','4877123','150512','I'),
-('Centro de Salud San Vicente','San Vicente 15712','4877456','150502','I'),
+('Centro de Salud San Vicente','San Vicente 15712','4877456','150502','A'),
 ('Centro de Salud Imperial','Imperial 15712','4877898','150502','I'),
-('Centro de Salud San Luis','San Luis 15712','4877898','150502','I'),
+('Centro de Salud San Luis','San Luis 15712','4877898','150502','A'),
 ('Centro de Salud Cerro Azul','Cerro Azul 15712','4877198','150502','I'),
-('Centro de Salud Lunahuana','Lunahuana 15712','4277898','150502','I'),
+('Centro de Salud Lunahuana','Lunahuana 15712','4277898','150502','A'),
 ('Centro de Salud Asia','Asia 15712','4877338','150502','I'),
 ('Centro de Salud Mala','Mala 15712','4871828','150502','I'),
 ('Centro de Salud Zuñiga','Zuñiga 15712','4877823','150502','I'),
 ('Centro de Salud Calango','Calango 15712','4810098','150502','I'),
 ('Centro de Salud Chilca','Chilca 15712','4877123','150502','I'),
-('Centro de Salud Coayllo','Coayllo 15712','4377898','150502','I'),
+('Centro de Salud Coayllo','Coayllo 15712','4377898','150502','A'),
 ('Centro de Salud Nuevo Imperial','Nuevo Imperial 15712','4871218','150502','I'),
 ('Centro de Salud San Antonio','San Antonio 15712','4870008','150502','I'),
 ('Centro de Salud Pacaran','Pacaran 15712','4871231','150502','I'),
-('Centro de Salud Santa Cruz de Flores','Santa Cruz de Florez 15712','4898998','150502','I'),
-('Centro de Salud Lima','Lima 15712','4877123','150502','I'),
-('Centro de Salud Jaen','Jaen 15712','4877892','150502','I'),
-('Centro de Salud Tacna','Tacna 15712','4877891','150502','I');
+('Centro de Salud Santa Cruz de Flores','Santa Cruz de Florez 15712','4898998','150502','A'),
+('Centro de Salud Lima','Lima 15712','4877123','150502','A'),
+('Centro de Salud Jaen','Jaen 15712','4877892','150502','A'),
+('Centro de Salud Tacna','Tacna 15712','4877891','150502','A');
 
 -- INSERCION DE REGISTROS A LA TABLA ENFERMEDADES.
 INSERT INTO 
@@ -2155,7 +2155,7 @@ VALUES
 
 -- INSERCION DE REGISTROS EN LA TABLA HISTORIAS CLINICAS
 INSERT INTO  
-HISTORIA_CLINICA (PESO,ALTURA,IDPAC,IDTRA,FECHISCLI) 
+HISTORIA_CLINICA (PESHISCLI,ALTHISCLI,IDPAC,IDTRA,FECHISCLI) 
 VALUES
 ('47','1.60','15',2,'2000/12/14'),
 ('30','1.50','15',3,'2000/12/14'),
@@ -2240,3 +2240,4 @@ VALUES
 ('2019/11/26','6','H00-H59'),
 ('2019/11/26','6','H60-H95');
 
+select * from especialidad;

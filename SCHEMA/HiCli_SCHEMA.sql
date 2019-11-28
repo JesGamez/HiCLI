@@ -1,8 +1,6 @@
--- Created by Vertabelo (http://vertabelo.com)
--- Last modification date: 2019-11-26 15:50:34.558
-
--- tables
--- Table: CONSULTA_ENFERMEDAD
+Drop database if exists hicli;
+create or replace database hicli;
+use hicli;
 CREATE TABLE CONSULTA_ENFERMEDAD (
     IDCONENF int NOT NULL AUTO_INCREMENT COMMENT 'ID identificador de la tala Consulta_Enfermedad.',
     FECCONENF date NULL COMMENT 'Fecha en que se realizo la consulta.',
