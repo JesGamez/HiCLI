@@ -33,3 +33,13 @@ from paciente inner join persona
 on persona.idper  = paciente.idper
 inner join historia_clinica
 on historia_clinica.idpac = paciente.idpac;
+
+-- Consulta que visualice en que establecimientos se atendió el paciente.
+select 
+concat(persona.nomper,' ',persona.apeper) AS PACIENTE,
+establecimiento.nomest AS ESTABLECIMIENTO
+from historia_clinica 
+inner join paciente on historia_clinica.IDPAC = paciente.IDPAC
+inner join trabajador on historia_clinica.IDTRA = trabajador.IDTRA
+inner join establecimiento on trabajador.IDEST = establecimiento.IDEST
+inner join persona on paciente.IDPER = persona.IDPER;
