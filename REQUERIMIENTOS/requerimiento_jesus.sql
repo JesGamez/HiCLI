@@ -36,6 +36,7 @@ on historia_clinica.idpac = paciente.idpac;
 
 -- Consulta que visualice en que establecimientos se atendió el paciente.
 select 
+persona.idper,
 concat(persona.nomper,' ',persona.apeper) AS PACIENTE,
 establecimiento.nomest AS ESTABLECIMIENTO
 from historia_clinica 
@@ -43,3 +44,12 @@ inner join paciente on historia_clinica.IDPAC = paciente.IDPAC
 inner join trabajador on historia_clinica.IDTRA = trabajador.IDTRA
 inner join establecimiento on trabajador.IDEST = establecimiento.IDEST
 inner join persona on paciente.IDPER = persona.IDPER;
+
+-- Lista de la cantidad de trabajadores por establecimiento.
+SELECT 
+ESTABLECIMIENTO.NOMEST AS ESTABLECIMIENTO, 
+COUNT(TRABAJADOR.IDTRA) AS TOTAL
+FROM ESTABLECIMIENTO
+LEFT JOIN TRABAJADOR
+ON ESTABLECIMIENTO.IDEST = TRABAJADOR.IDEST
+GROUP BY ESTABLECIMIENTO.IDEST ASC;
