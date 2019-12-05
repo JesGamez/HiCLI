@@ -1,4 +1,14 @@
 use hicli;
+-- JEAN
+-- Listado de las enfermedades que más afectan a los pacientes.
+SELECT CE.CODENF, EN.DESCENF, COUNT(*) AS CONTAR FROM HISTORIA_CLINICA AS HC
+INNER JOIN CONSULTA_ENFERMEDAD AS CE ON CE.CODHISCLI = HC.CODHISCLI
+INNER JOIN ENFERMEDAD AS EN ON EN.CODENF =	CE.CODENF
+GROUP BY EN.DESCENF asc
+ORDER BY CONTAR;
+-- Reporte de especialidades de estado activo
+imagen
+-- Cuántos pacientes se atendieron por dia agrupados por un establecimiento.
 
 -- JESUS
 -- Listado de trabajadores agrupados por especialidad.
