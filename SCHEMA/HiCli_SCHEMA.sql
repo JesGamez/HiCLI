@@ -12,7 +12,7 @@ CREATE TABLE CONSULTA_ENFERMEDAD (
 -- Table: ENFERMEDAD
 CREATE TABLE ENFERMEDAD (
     CODENF char(7) NOT NULL COMMENT 'Codigo identificador de enfermedad.',
-    DESCENF varchar(100) NULL COMMENT 'Descripcion de enfermedad.',
+    DESCENF varchar(150) NULL COMMENT 'Descripcion de enfermedad.',
     CONSTRAINT ENFERMEDAD_pk PRIMARY KEY (CODENF)
 ) COMMENT 'Aqui se registraran todas las enfermedades que existen hasta el dia de hoy.';
 

@@ -1,5 +1,6 @@
 use hicli;
 
+-- JESUS
 -- Listado de trabajadores agrupados por especialidad.
 select trabajador.idtra, persona.nomper, persona.apeper, especialidad.desesp
 from trabajador inner join persona
@@ -34,6 +35,8 @@ on persona.idper  = paciente.idper
 inner join historia_clinica
 on historia_clinica.idpac = paciente.idpac;
 
+
+-- DIEGO
 -- Consulta que visualice en que establecimientos se atendió el paciente.
 select 
 persona.idper,
