@@ -9,7 +9,16 @@ ORDER BY CONTAR;
 -- Reporte de especialidades de estado activo
 imagen
 -- Cuántos pacientes se atendieron por dia agrupados por un establecimiento.
-
+select establecimiento.nomest as establecimiento , count(paciente.idpac) as nº_pac  from paciente
+inner join historia_clinica on
+paciente.idpac = historia_clinica.idpac
+inner join trabajador on
+historia_clinica.idtra = trabajador.idtra
+inner join establecimiento on 
+trabajador.idest = establecimiento.idest
+where establecimiento.estest = 'A'
+group by establecimiento
+order by establecimiento desc;
 -- JESUS
 -- Listado de trabajadores agrupados por especialidad.
 select trabajador.idtra, persona.nomper, persona.apeper, especialidad.desesp
