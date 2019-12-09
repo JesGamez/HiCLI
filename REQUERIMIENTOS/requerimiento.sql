@@ -19,6 +19,7 @@ trabajador.idest = establecimiento.idest
 where establecimiento.estest = 'A'
 group by establecimiento
 order by establecimiento desc;
+
 -- JESUS
 -- Listado de trabajadores agrupados por especialidad.
 select trabajador.idtra, persona.nomper, persona.apeper, especialidad.desesp
